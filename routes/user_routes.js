@@ -1,23 +1,8 @@
-// describe routes here by creating objects inside the user_routes array
-const tags = ["api", "Users"];
+const express=require('express')
+const { user_controllers } = require('../controllers')
+const UserRoutes=express.Router()
 
-const { user_controllers } = require("../controllers");
-const {
-  usersValidation,
-  headerValidator,
-  getAccessTokenHeaderValidator,
-} = require("../validators");
+UserRoutes.get("/", user_controllers.getUser)
 
-const user_routes = [
-  {
-    method: "GET",
-    path: "/fetch-user",
-    options: {
-      description: "Fetch all users.",
-      tags,
-      handler: user_controllers.getUser,
-    },
-  },
-];
 
-module.exports = user_routes;
+module.exports=UserRoutes;

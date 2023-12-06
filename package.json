@@ -1,38 +1,25 @@
 {
+  "name": "shiprocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^21.3.2",
-    "@hapi/inert": "^7.1.0",
-    "@hapi/vision": "^7.0.2",
-    "crypto-js": "^4.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
     "dotenv": "^16.3.1",
-    "hapi-cors": "^1.0.3",
-    "hapi-response-time": "^2.2.4",
-    "hapi-swagger": "^17.0.0",
-    "haversine-distance": "^1.2.1",
-    "html-pdf": "^3.0.1",
+    "express": "^4.18.2",
     "joi": "^17.9.2",
-    "jsonwebtoken": "^9.0.0",
-    "moment": "^2.29.4",
+    "jsonwebtoken": "^9.0.1",
     "mysql2": "^3.4.2",
     "sequelize": "^6.32.1"
-  },
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "name": "close2buy_api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "keywords": [],
-  "author": "Debanjan Dasgupta",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DebanjanJurysoft/close2buy-backend.git"
-  },
-  "bugs": {
-    "url": "https://github.com/DebanjanJurysoft/close2buy-backend/issues"
-  },
-  "homepage": "https://github.com/DebanjanJurysoft/close2buy-backend#readme",
-  "description": ""
+  }
 }
